@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src='./list.js'></script>
+    <script src='./dualList.js'></script>
+    <style>
+        h1{
+            color:#1cc09f,
+            
+        }
+        @keyframes header {
+            
+        }
+    </style>
+</head>
+<body>
+    <!-- <script>
+        let list=new List()
+        list.append(1)
+        list.append(2)
+        console.log("原链表",list.toString())
+        list.insertBefore(2,3)
+        console.log("在2前插入3",list.toString())
+        list.insertAfter(2,4)
+        console.log("在2后插入4",list.toString())
+        list.delete(4)
+        console.log("删除4",list.toString())
+        console.log("长度",list.len)
+    </script> -->
+    <script>
+        let dList=new DualList()
+        dList.appendTail(1).appendTail(2)
+        dList.appendHead(3).appendHead(4)
+        console.log(dList.toString())
+        console.log([1,2,3].indexOf(5))
+    </script>
+    <h1>You are the best!</h1>
+</body>
+</html>
