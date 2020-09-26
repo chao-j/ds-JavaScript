@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- <script src='./list.js'></script> -->
+  <!-- <script src='./dualList.js'></script> -->
+  <script src="./circleList.js"></script>
+  <style>
+    h1 {
+      color: #1cc09f,
+
+    }
+
+    @keyframes header {}
+  </style>
+</head>
+
+<body>
+  <!-- 单向链表 -->
+  <!-- <script>
+    let list=new List()
+    list.append(1)
+    list.append(2)
+    console.log("原链表",list.toString())
+    list.insertBefore(2,3)
+    console.log("在2前插入3",list.toString())
+    list.insertAfter(2,4)
+    console.log("在2后插入4",list.toString())
+    list.delete(4)
+    console.log("删除4",list.toString())
+    console.log("长度",list.len)
+  </script> -->
+
+  <!-- 双向链表 -->
+  <!-- <script>
+    let dList = new DualList()
+    dList.appendTail(1).appendTail(2).appendTail(3)
+    dList.appendHead(4).appendHead(5).appendHead(6)
+    console.log(dList.toString())
+    dList.delete(4)
+    console.log(dList.toString())
+    dList.insert(5, 7)
+    console.log(dList.toString())
+  </script> -->
+  <script>
+    let cList = new CircleList()
+    cList.append(0).append(1).append(2).append(3).append(4)
+    cList.solution(3, 2)
+    cList.toString()
+    console.log(cList)
+  </script>
+  <h1>You are the best!</h1>
+</body>
+
+</html>
